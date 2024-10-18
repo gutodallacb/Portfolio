@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+    --cor-primaria: #A0DEFF;
+    --cor-segundaria: #E4E0E1;
+    --cor-terciaria: #5AB2FF;
+    --cor-hover: #D6C0B3;
+
+    --fonte-princiapal: "Montserrat", sans-serif;
+    --fonte-segundaria: "Krona One", sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 2px solid black;
+    content: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: black;
+    color: var(--cor-segundaria);
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.texto-destaque {
+    color: var(--cor-segundaria);
+}
+
+.apresentacao {
+    margin: 5% 5% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.apresentacao-conteudo {
+    width: 603px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 50%;
+}
+
+.apresentacao-conteudo-titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-segundaria);
+    font-weight: 400;
+    font-style: normal;
+    margin: 0% 0%;
+}
+
+.apresentacao-conteudo-links-subtitulo {
+    font-size: 1rem;
+    font-family: var(--fonte-segundaria);
+    font-weight: 400;
+}
+
+.apresentacao-conteudo-paragrafo {
+    font-size: 1.25rem;
+    font-family: var(--fonte-princiapal);
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0% 0%;
+}
+
+.apresentacao-conteudo-links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.apresentacao_botao {
+    border: 2px solid var(--cor-terciaria);
+    width: 380px;
+    text-align: center;
+    border-radius: 12px;
+    font-size: 2rem;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-segundaria);
+    font-family: var(--fonte-princiapal);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.apresentacao_botao:hover {
+    border: 3px solid var(--cor-segundaria);
+}
+
+.rodape {
+    padding: 15px;
+    color: black;
+    background-color: var(--cor-terciaria);
+    justify-content: center;
+    display: flex;
+    font-family: var(--fonte-princiapal);
+}
+
+.cabecalho {
+    margin: 2% 0% 0% 11%;
+}
+
+.cabecalho_menu {
+    display: flex;
+    gap: 60px;
+}
+
+.cabecalho_menu_link {
+    display: flex;
+    font-family: var(--fonte-princiapal);
+    color: var(--cor-terciaria);
+    font-size: 1.375rem;
+    text-decoration: none;
+}
+
+.cabecalho_menu_link:hover {
+    color: var(--cor-segundaria)
+}
+
+.apresentacao__conteudo__texto a {
+    text-decoration: none;
+    color: var(--cor-terciaria);
+}
+
+.apresentacao-conteudo-paragrafo-curriculo {
+    font-size: 1rem;
+    font-family: var(--fonte-princiapal);
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0% 0%;
+}
+
+.apresentacao-conteudo-curriculo {
+    width: 603px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.imgagem_eu {
+    border: 3px solid var(--cor-terciaria); 
+    border-radius: 20px; 
+    width: 25%;
+}
+
+@media (max-width: 1200px){
+    .cabecalho{
+        padding: 5%;
+    }
+
+    .cabecalho_menu{
+        justify-content: center;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        margin: 0.2rem;
+    }
+
+    .apresentacao-conteudo {
+        width: 90%;
+        margin: 1rem;
+    }
+
+    .imgagem_eu {
+        width: 30%;
+    }
+}
+
+/* Estudos:
+margin, padding: Remove a margem e o preenchimento padrão de todos os elementos.
+border: Aplica uma borda de 2px preta.
+content: Define o conteúdo inicial como zero.
+box-sizing: Inclui o padding e a borda dentro da largura total e altura do elemento.
+background-color, color: Define o fundo e a cor do texto.
+font-size, color: Define o tamanho e a cor de títulos e textos.
+display: flex: Aplica layout flexível (flexbox).
+align-items: center, justify-content: space-around: Alinha itens ao centro (verticalmente) e distribui uniformemente.
+width, gap, flex-direction: column: Define a largura, o espaçamento entre elementos e a direção de flexbox (coluna).
+font-size, font-family, font-weight, font-style: Define o tamanho e o estilo da fonte (peso, estilo normal).
+border, gap: Aplica bordas e espaçamento entre elementos.
+text-align: Centraliza o texto.
+text-decoration: none: Remove sublinhado de links.
+border-radius: Aplica bordas arredondadas.
+border, color: Altera a borda e a cor no estado hover.
+padding: Define o preenchimento interno.
+display: flex: Define o layout do rodapé e cabeçalho com flexbox.
+gap: Aplica espaçamento entre itens.
+text-decoration: none, color: Remove sublinhado e aplica cor aos links.
+font-size, font-optical-sizing: Define o tamanho da fonte e o espaçamento automático. */
